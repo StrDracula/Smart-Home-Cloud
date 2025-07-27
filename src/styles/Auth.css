@@ -1,0 +1,272 @@
+.auth-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.auth-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.auth-error {
+  padding: 12px;
+  background-color: #ffebee;
+  color: #d32f2f;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #143D60;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.auth-logo span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #143D60;
+}
+
+.auth-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-content p {
+  margin-bottom: 0.5rem;
+  color: #27667B;
+}
+
+.auth-content h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #143D60;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #27667B;
+  font-size: 0.9rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Added styles for admin ID field */
+.required-field {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.field-hint {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.admin-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.auth-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #143D60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.auth-submit-btn:hover {
+  background-color: #27667B;
+}
+
+.auth-divider {
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.auth-divider:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+}
+
+.auth-divider span {
+  background-color: white;
+  padding: 0 1rem;
+  position: relative;
+  color: #27667B;
+  font-size: 0.9rem;
+}
+
+.social-auth {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.facebook {
+  color: #1877F2;
+}
+
+.google {
+  color: #EA4335;
+}
+
+.apple {
+  color: #000;
+}
+
+.auth-footer {
+  text-align: center;
+}
+
+.auth-link {
+  color: #143D60;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-image {
+  flex: 1;
+  background-color: #A0C878;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slideshow-image.active {
+  opacity: 1;
+}
+
+.slideshow-indicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+  
+  .auth-form-container {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  
+  .auth-image {
+    min-height: 200px;
+  }
+}
+/* Add this to Auth.css
+.social-btn.microsoft {
+  background-color: #00a4ef;
+}
+
+.social-btn.microsoft:hover {
+  background-color: #106ebe;
+} */

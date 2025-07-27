@@ -1,0 +1,228 @@
+.main-container {
+  min-height: 100vh;
+  background-color: #DDEB9D;
+}
+.welcome-text {
+  margin-right: 1rem;
+  color: #27667B;
+}
+
+.dashboard-btn {
+  padding: 8px 16px;
+  background-color: #143D60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.dashboard-btn:hover {
+  background-color: #27667B;
+}
+/* Navigation */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 2rem;
+  background-color: #DDEB9D;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  padding: 5px;
+  font-size: 24px;
+  min-width: 30px;
+  min-height: 30px;
+  color: #DDEB9D;
+}
+
+.logo-text {
+  margin-left: 0.1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #143D60;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sign-in-btn {
+  padding: 0.5rem 1rem;
+  background-color: #143D60;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.sign-up-btn {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: #143D60;
+  border: 1px solid #143D60;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-container {
+  min-height: 70vh;
+  position: relative;
+}
+
+/* Hero with background image */
+.hero-background {
+  background-image: url('../assets/home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black shadow overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-overlay {
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  z-index: 10;
+}
+
+.hero-content-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content-overlay .highlight {
+  color: #DDEB9D; /* Changed for better contrast against dark background */
+}
+
+.hero-content-overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  max-width: 600px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.get-started-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #143D60;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.get-started-btn:hover {
+  background-color: #27667B;
+  transform: translateY(-2px);
+}
+
+/* Features Section */
+.features-section {
+  padding: 4rem 2rem;
+  background-color: #27667B;
+  text-align: center;
+  color: white;
+}
+
+.features-title {
+  color: #DDEB9D;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.features-subtitle {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.feature-icon-wrapper {
+  background-color: #143D60;
+  border-radius: 0.5rem;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  color: #DDEB9D;
+}
+
+.feature-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.feature-description {
+  color: #DDEB9D;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content-overlay h1 {
+    font-size: 2.5rem;
+  }
+  
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

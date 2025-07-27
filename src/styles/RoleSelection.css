@@ -1,0 +1,98 @@
+.role-selection-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #DDEB9D;
+}
+.auth-toggle {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.toggle-link {
+  color: #4a90e2;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
+.role-selection-container h1 {
+  color: #143D60;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.roles-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.role-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.role-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.role-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.role-card:nth-child(1) .role-icon {
+  color: #143D60;
+}
+
+.role-card:nth-child(2) .role-icon {
+  color: #27667B;
+}
+
+.role-card:nth-child(3) .role-icon {
+  color: #A0C878;
+}
+
+.role-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #143D60;
+}
+
+.role-card p {
+  color: #27667B;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .roles-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .role-card {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 1.5rem;
+  }
+}
